@@ -17,7 +17,7 @@
 	var thsUrl= '/images'
 
 	var showTbac = [
-		{name:'path',txt:'图片',style:'width:100px;',filte:function(txt,item){return '<img class="vimg" src="'+txt+'" data-original="'+txt+'" onerror="javascript:this.src=\'/images/defulte.jpg\'" />'}},
+		{name:'path',txt:'图片',style:'width:100px;',filter:function(txt,item){return '<img class="vimg" src="'+txt+'" data-original="'+txt+'" onerror="javascript:this.src=\'/images/defulte.jpg\'" />'}},
 		{name:'path',txt:'路径'},
 		{name:'_id',txt:'ID'},
 		{name:'describe',txt:'描述'}
@@ -73,8 +73,8 @@
 	},function(data,dirUl){
 		thsDirData = data
 
-	}).click(function(ths, id){
-		tmain.fnGetData({id:id})
+	}).click(function(ths){
+		tmain.fnGetData({id:ths.data._id})
 	});
 
 	$('#seekBtn').click(function(){
