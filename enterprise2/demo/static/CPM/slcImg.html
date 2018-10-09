@@ -1,0 +1,23 @@
+<div class="slc">
+    <div class="slcDir">
+        <h3 class="ttl">图片目录 <span class="fr btn_3" ng-click="createImg(true, 'images')">新建图片</span></h3>
+        <div class="items">
+            <a href="#" class="item" ng-repeat="item in slcDirItems" ng-click="toSlcCc(item._id, $index, 'images')" onclick="addDirOn($(this))">{{item.name}}</a>
+        </div>
+    </div>
+    <div class="slcCc">
+        <h3 class="ttl">图片</h3>
+        <div class="items">
+            <span class="imgBox" ng-init="thisChecked = hasImg(contentData.imagefile, img.path)" ng-repeat="img in slcCcTimes"  ng-click="selected(img.path, thisChecked = !thisChecked)">
+                <img ng-src="{{img.path}}" />
+                <div class="isSllc" ng-show="thisChecked"><i class="icon-checkmark"></i></div>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function addDirOn(ths){
+        ths.addClass('on').siblings().removeClass('on')
+    }
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="王平波">
+    <title>网站管理后台登陆</title>
+    <link rel="stylesheet" type="text/css" href="/lib/icon/style.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/css/H-ui.reset.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/css/cm.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+</head>
+<body id="login" ng-app="loginApp">
+    <iframe class="baniframe" sandbox="allow-scripts allow-same-origin" id="mh" src="/lib/canvas/c5.html"></iframe>
+    <div class="loginBox">
+        <div class="hdttl">欢迎来到网站管理平台<small> --请登录</small></div>
+        <div class="formBoxIcon" ng-controller="fromCtrl">
+            <div class="fmlist onList">
+                <div class="lablet">用户名</div>
+                <div class="boxtb inputBox">
+                    <div class="boxcel tyicon">
+                        <i class="icon-user"></i>
+                    </div>
+                    <div class="boxcel">
+                        <input type="text" name="username" placeholder="请输入用户名" autofocus="autofocus" ng-model="username" data-required=true />
+                    </div>
+                </div>
+            </div>
+            <div class="fmlist">
+                <div class="lablet">密码</div>
+                <div class="boxtb inputBox">
+                    <div class="boxcel tyicon">
+                        <i class="icon-lock"></i>
+                    </div>
+                    <div class="boxcel">
+                        <input type="password" name="pwd" placeholder="请输入用密码" ng-model="password" data-required=true />
+                    </div>
+                </div>
+            </div>
+            <div class="fmSbm">
+                <a class="btn_2 sbm" href="javascript:void(0)" ng-click="login()">登 录</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/lib/js/jquery/jQuery_v2.1.3.js"></script>
+    <script type="text/javascript" src="/lib/js/angularjs/angularjs_v1.5.8.js"></script>
+    <script type="text/javascript" src="/static/js/login.js"></script>
+</body>
+</html>

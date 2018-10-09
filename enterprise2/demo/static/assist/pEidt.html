@@ -1,0 +1,37 @@
+<div class="formBox">
+    <div class="dataChunk">
+        <p>名称</p>
+        <input class="ebox etext" type="text" name="name" ng-model="contentData.name" />
+    </div>
+    <div id="file_box" class="dataChunk">
+        <p>产品图片</p>
+        <span class="file_btn" ng-click="showFixedInfo2('imagesdir','/static/CPM/slcImg.html')">选择图片</span>
+        <div id="images" class="fileImgs">
+            <span class="itCsle imgBox" ng-repeat="item in contentData.imagefile">
+                <div class="csle"><span class="delete" ng-click="removeImg($index)"><i class="icon-cancel-circle"></i></span></div>
+                <img ng-src="{{item}}" data-path="..{{item}}" />
+            </span>
+        </div>
+    </div>
+    <div class="dataChunk">
+        <p>简介</p>
+        <textarea class="ebox etextarea" type="text" name="describe" ng-model="contentData.describe" style="height:80px;"></textarea>
+    </div>
+    <div class="dataChunk">
+        <p>内容</p>
+        <textarea id="textarea1" class="ebox etextarea" type="text" name="details" ng-model="contentData.details"></textarea>
+    </div>
+    <div class="btns">
+        <span id="sbm" class="btn_0" ng-click="cBtn()">提交</span>
+        <span id="cancel" class="btn_0" ng-click="cancelTc()">取消</span>
+    </div>
+</div>
+<script type="text/javascript" src='/static/js/plug-in/wangEditor.min.js'></script>
+<script type="text/javascript" src="/static/js/fncm/uploadImg.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var editor = $('#textarea1').wangEditor({
+            uploadUrl: '/fs/fsupload?isOtherImg=true&imgPath=other'
+        });
+    });
+</script>

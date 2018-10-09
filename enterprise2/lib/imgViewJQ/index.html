@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>JS/jQuery图片查看器viewer.js演示-jQuery版本_jq22</title>
+<link rel="stylesheet" href="css/viewer.min.css">
+<script type="text/javascript" src="js/tif.min.js"></script>
+<style>
+* { margin: 0; padding: 0;}
+html,body{
+	width:100%;
+	height:100%;
+}
+#jq22 { width: 700px; margin: 0 auto; font-size: 0;}
+#jq22 li { display: inline-block; width: 32%; margin-left: 1%; padding-top: 1%;}
+#jq22 li img { width: 100%;}
+</style>
+</head>
+
+<body>
+<h1>jQuery版本</h1>
+
+<ul id="jq22">
+	<li><img data-original="img/tibet-1.jpg" src="img/tibet-1.jpg" alt="图片1"></li>
+	<li><img data-original="img/tibet-2.jpg" src="img/tibet-2.jpg" alt="图片2"></li>
+	<li><img data-original="img/tibet-3.jpg" src="img/tibet-3.jpg" alt="图片3"></li>
+	<li><img data-original="img/tibet-4.jpg" src="img/tibet-4.jpg" alt="图片4"></li>
+	<li><img data-original="img/tibet-5.jpg" src="img/tibet-5.jpg" alt="图片5"></li>
+	<li><img data-original="img/tibet-6.jpg" src="img/tibet-6.jpg" alt="图片6"></li>
+	<li><img data-original="img/000004.tif" src="img/000004.tif" alt="图片1" onerror="javascript:this.src='data:image/jpeg;base64,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'"></li>
+	<li><img data-original="img/000006.tif" src="img/000006.tif" onerror="javascript:this.src='data:image/jpeg;base64,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'" alt="图片2"></li>
+</ul>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/viewer-jquery.min.js"></script>
+<script>
+$(function() {
+	$('#jq22').viewer({
+		url: 'data-original'
+	});
+});
+
+// $.ajax({  
+//     type: "POST", //必须用post  
+//     url: "http://192.168.4.204:9080/icmrm/ICMResourceManager/000001.tif?order=retrieve&item-id=A1001001A17C16B30258B09889&version=1&collection=CBR.CLLCT001&libname=icmnlsdb&update-date=2017-03-16+05%3A02%3A58.113954&token=A4E6.KBGwqk6_w3wkVYtWaJg;&content-length=0",  
+//     crossDomain: true,  
+//     jsonp: "jsoncallback",  
+//     data: {},  
+//     contentType: false, //必须  
+//     processData: false,  
+//     //不能用success，否则不执行  
+//     complete: function (data) { console.log(data) 
+//         var data = eval(data.responseText);  
+//         console.log(data);  
+//     }  
+// });  
+</script>
+
+</body>
+</html>

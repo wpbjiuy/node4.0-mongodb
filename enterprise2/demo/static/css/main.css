@@ -1,0 +1,538 @@
+.header{
+    height:60px;
+    line-height:60px;
+    width:100%;
+    background-color:#1e2229;
+    position: relative;
+    z-index:2;
+}
+.header .nav{
+    width:80%;
+    height:100%;
+    margin:0 auto;
+    overflow:hidden;
+}
+.header .nav li{
+    height:100%;
+    float:left;
+}
+.header .nav li a{
+    display:block;
+    padding:0 15px;
+    text-align:center;
+    font-size:16px;
+    color:#fff;
+}
+.header .nav li a:hover{
+    background-color:#0096FF;
+}
+.header .nav li a:active,.header .nav li a.on{
+    background-color:#084AD3;
+}
+
+.header .userBox{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    z-index:2;
+    color:#fff;
+    font-size:18px;
+}
+.header .userBox .logout{
+    margin-left: 10px;
+    color: #ddd;
+}
+.header .userBox .logout i{
+    margin-top: 2px;
+}
+
+.tlink{
+    margin-top:50px;
+    font-size:0;
+}
+.tlink .abk{
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    width:40%;
+    margin:0 5%;
+    margin-bottom:20px;
+    height:100%;
+}
+.tlink a{
+    display:block;
+    width:100%;
+    padding:40px 0;
+    text-align:center;
+    font-size:25px;
+    color:#fff;
+    transition:opacity 0.2s;
+    background-color:#222;
+}
+.tlink a.c1{
+    background-color:#34A3D8;
+}
+.tlink a.c2{
+    background-color:#49F0BB;
+}
+.tlink a.c3{
+    background-color:#99F049;
+}
+.tlink a.c4{
+    background-color:#F0A049;
+}
+.tlink a:hover{
+    opacity:0.8;
+}
+.tlink a:active{
+    opacity:1;
+}
+
+.tlink .abk .die{
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:-25px;
+    font-size:16px;
+    transition:bottom 0.4s,color 0.5s;
+    text-align:center;
+    color:#666;
+}
+
+.tlink .abk:hover .die{
+    bottom:20px;
+    color:#fff;
+}
+
+.tlink .imgBox{
+    padding-bottom: 20px;
+    position:relative;
+    z-index:2;
+    display:inline-block;
+    height:150px;
+    overflow:hidden;
+    margin: 5px;
+}
+.tlink .imgBox img{
+    height:inherit;
+    border: 1px solid #ddd;
+}
+
+.mainTop{
+    height:50px;
+    line-height:50px;
+}
+.mainTop .btn_1{
+
+}
+
+main,.main{
+    *height:90%;
+    height: calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+    height: -moz-calc(100% -6 0px);
+    height: -ms-calc(100% - 60px);
+}
+
+.content{
+    height:inherit;
+}
+.content .box_left{
+    height:inherit;
+    width:280px;
+    border-right:2px solid #444;
+}
+.content .box_right{
+    height:inherit;
+    padding:50px;
+    overflow:auto;
+}
+.content .topAdd{
+    margin:15px;
+    display:inline-block;
+}
+.content .nav{
+        
+}
+.content .nav .item{
+    display:block;
+    margin:5px 0;
+    padding:5px;
+    text-indent:40px;
+    position:relative;
+    overflow:hidden;
+    z-index:2;
+}
+.content .nav .item:hover{
+
+}
+.content .nav .item a{
+    display:block;
+}
+.content .nav .item.on a{
+    color:#3C84E0;
+}
+.content .nav .itCsle:hover .csle{
+    color:#555;
+}
+.content .info{
+    
+}
+
+.content .nav .topAdd{
+    display:inline-block;
+    margin:20px 15px 40px;
+}
+
+.ebox{
+    width:100%;
+    border:1px solid #ccc;
+    padding:10px 0;
+    box-sizing:border-box;
+}
+
+/*itCsle 控制器按钮*/
+.itCsle{
+    position:relative;
+    overflow:hidden;
+    z-index:2;
+}
+.itCsle .csle{
+    position:absolute;
+    right:0;
+    top:-25px;
+    font-size:16px;
+    transition:top 0.4s,color 0.5s;
+}
+.itCsle .csle span{
+    cursor:pointer;
+    margin:0 8px;
+}
+
+.itCsle:hover .csle{
+    top:0;
+    color:#fff;
+}
+
+.itCsle.imgBox:hover .csle{
+    color:#666;
+}
+
+/*编辑*/
+.formBox{
+    width:100%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+.formBox .dataChunk{
+    width:100%;
+    margin-bottom:20px;
+}
+.formBox .etext{
+    height:28px;
+    line-height:28px;
+}
+.formBox .etextarea{
+    width:100%;
+    max-width:100%;
+    height:200px;
+    padding:10px;
+}
+.formBox .fileImgs{
+    
+}
+.fileImgs .imgBox,.formBox .fileImgs .imgBox{
+    display: inline-block;
+    position:relative;
+    z-index:2;
+    overflow:hidden;
+    margin:5px;
+}
+.fileImgs .imgBox img,.formBox .fileImgs img{
+    height:80px;
+    width:auto;
+    display:block;
+}
+.formBox .btns{
+    text-align:center;
+}
+
+.formBox .btn_0{
+    padding:5px 20px;
+    margin:0 20px;
+}
+
+/*内容显示*/
+.cshow{
+
+}
+.cshow .name{
+    font-size:20px;
+    color:#444;
+}
+.cshow .tc{
+    font-size:12px;
+    margin-top:15px;
+    color:#888;
+}
+.cshow .tc span:first-child{
+    margin-right:15px;
+}
+.cshow .details{
+    font-size:15px;
+    color:#666;
+    margin-top:28px;
+}
+.cshow .thumbnail{
+    max-height:100px;
+    max-width:100px;
+    margin-right:15px;
+}
+
+
+/*选择图片*/
+.slc{}
+.slc .items{
+    padding:0 10px;
+}
+.slc .ttl{
+    font-size: 16px;
+    border-bottom: 2px solid #EB4510;
+    margin-bottom:5px;
+}
+.slc .slcDir{}
+.slc .slcDir .ttl{
+
+}
+.slc .slcDir .item{
+    display:inline-block;
+    margin:0 25px 10px 0;
+}
+.slc .slcDir .item.on{
+    color: #fff;
+    background-color: #1468AA;
+    padding: 0 8px;
+}
+.slc .slcCc{}
+.slc .slcCc .imgBox{
+    position:relative;
+    z-index:1;
+    display:inline-block;
+    margin-left:5px;
+}
+.slc .slcCc .imgBox:first-child{
+    margin: 0;
+}
+.slc .slcCc .imgBox img{
+    height:80px;
+}
+.slc .slcCc .imgBox .isSllc{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color: rgba(0,0,0,0.6);
+    text-align: right;
+}
+.slc .slcCc .imgBox .isSllc i{
+    margin: 5px 10px;
+    color: #00FF5C;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.slc .btns{
+    margin-top:20px;
+}
+.slc .btns .btn{
+    
+}
+
+/*进度条*/
+.readingBox{
+    position:fixed;
+    width:100%;
+    *height:90%;
+    height: calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+    height: -moz-calc(100% -6 0px);
+    height: -ms-calc(100% - 60px);
+    left:0;
+    bottom:0;
+    z-index:999;
+}
+.readingBox .reading{
+    height:4px;
+    width:0;
+    background-color:#084AD3;
+}
+
+/*--登录样式--*/
+#login{
+    background-color: #eee;
+}
+.loginTitl{
+    width:200px;
+    height:100%;
+    background-color: #11649B;
+    border-right: 1px solid #9EBCD2;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.loginTitl h1{
+    text-align: left;
+    width: 50px;
+    font-size: 50px;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    text-shadow: -2px -2px 4px #eee;
+    font-family: 'STXingkai';
+    animation: anTextLine 2s ease;
+    -webkit-animation: anTextLine 4s linear;
+}
+.loginTitl .topText{
+    left: 40px;
+    top: 50px;
+}
+@keyframes anTextLine{
+    0%{line-height: 200px;}
+    100%{line-height: 80px;}
+}
+@-webkit-keyframes anTextLine{
+    0%{line-height: 200px;}
+    100%{line-height: 80px;}
+}
+.loginTitl .bottomText{
+    right: 40px;
+    bottom: 50px;
+}
+.loginBox{
+    width: 500px;
+    height:280px;
+    position:fixed;
+    left:50%;
+    top:40%;
+    margin-left: -250px;
+    margin-top:-140px;
+    background-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 0px 8px #034584;
+    border: 1px solid #131b41;
+}
+.loginBox .hdttl{
+    height:40px;
+    line-height:40px;
+    text-indent:10px;
+    color:#fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px #cee6f4;
+    border-bottom: 1px solid #818D9B;
+    letter-spacing: 4px;
+}
+.loginBox .hdttl small{
+    font-size: 0.8em;
+}
+.formBoxIcon{
+    margin-top: 28px;
+}
+.formBoxIcon .fmlist{
+    width: 400px;
+    margin: 0 auto 35px;
+}
+.formBoxIcon .fmlist .lablet{
+    font-size:15px;
+    color: #45c5f6;
+    display: none;
+}
+.formBoxIcon .fmlist .inputBox{}
+.formBoxIcon .fmlist .tyicon{
+    width:40px;
+    text-align:center;
+    border: 1px solid #44abf4;
+    border-right:none;
+    font-size: 24px;
+    position: relative;
+    color: #469AD1;
+    }
+.formBoxIcon .fmlist .tyicon i{
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    color: #77ecff;
+    text-align: center;
+}
+.formBoxIcon .fmlist input{
+    border: 1px solid #44abf4;
+    border-left-style: dotted;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    background: none;
+    color: #fff;
+}
+.formBoxIcon .fmSbm{
+    text-align: center;
+}
+.formBoxIcon .fmSbm .sbm{
+    width: 100px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px #74b4db;
+    background: none;
+    border: 1px solid rgba(119, 236, 255, 0.59);
+    color: #fff;
+    background-color: rgba(90, 173, 244, 0.46);
+}
+.formBoxIcon .fmSbm .sbm:hover{
+    box-shadow: 0 0 8px #fff;
+}
+.formBoxIcon .fmSbm .sbm:active{
+    box-shadow: 0 0 4px #fff inset;
+}
+
+.formBoxIcon .onList .tyicon,.formBoxIcon .onList .tyicon input,.formBoxIcon .fmlist input:focus{
+    border-color:#15B3DE;
+    box-shadow:0 0 4px #15B3DE;
+}
+
+
+.formBoxIcon .onList .tyicon{}
+.formBoxIcon .onList input{}
+
+.formBoxIcon .errList .tyicon{
+    border-color:red;
+    box-shadow:0 0 4px red;
+    color:red;
+}
+.formBoxIcon .errList input{
+
+}
+/*--模仿table--*/
+.boxtb{
+    display:table;
+    border-collapse: separate;
+    border-spacing:0;
+    width:100%;
+}
+.boxcel{
+    display:table-cell;
+}
+.inputCel{
+    width:auto;
+}
+.inputCel .input_1{
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border-radius:0;
+}

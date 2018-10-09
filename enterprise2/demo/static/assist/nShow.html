@@ -1,0 +1,11 @@
+<div class="cshow">
+	<div class="ovHide">
+		<img class="fl thumbnail" ng-src="{{contentData.thumbnail}}">
+		<div class="fl">
+			<h3 class="name">{{contentData.title}}</h3>
+			<p class="tc"><span class="author">作者:{{contentData.author}}</span> <span class="time">发布日期：{{contentData.releaseTime | date:'yyyy-MM-dd HH:mm:ss'}}</span></p>   
+		</div>
+    </div>
+
+    <div class="details" string-html="contentData.details"></div>
+</div>

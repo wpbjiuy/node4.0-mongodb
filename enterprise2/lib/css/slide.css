@@ -1,0 +1,24 @@
+*{padding:0;margin:0;}
+.clr{clear:both;}
+a{text-decoration:none;}
+li{list-style:none;}
+
+.slide{width:1180px;height:400px;position:relative;overflow:hidden;}
+
+.slide .hd{width:100%;height:0;position:absolute;left:0;top:0;z-index:2;}
+.slide .hd a{display:block;position:absolute;width:40px;height:100%;line-height:100%;top:0;font-size:40px;text-align:center;color:#fff;font-family:'SimSun';}
+.slide .hd a.left_ck{left:0;}
+.slide .hd a.right_ck{right:0;}
+.slide .hd a:hover{background-color:rgba(0, 0, 0, 0.23);}
+.slide .hd a:active{color:#ddd;}
+
+.slide .slide_cc{width:100%;height:100%;}
+.slide .slide_cc ul{*height:100%;position:relative;left:0;top:0;z-index:1;overflow:hidden;}
+.slide .slide_cc ul li{float:left;width:1180px;*height:100%;}
+.slide .slide_cc ul li a{display:block;width:100%;*height:100%;}
+.slide .slide_cc ul li a img{width:100%;height:auto;}
+
+.slide .sd_nav{position:absolute;bottom:40px;height:20px;left:50%;z-index:2;}
+.slide .sd_nav ul{}
+.slide .sd_nav ul li{width:20px;height:20px;border-radius:50%;background-color:#eee;float:left;margin:0 5px;}
+.slide .sd_nav ul li.on{background-color:#666;}

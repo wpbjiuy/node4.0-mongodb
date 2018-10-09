@@ -1,0 +1,168 @@
+html,body{
+    height:100%;
+}
+.baniframe{
+    width:100%;
+    height:100%;
+    border-width:0;
+}
+input::-webkit-input-placeholder{ color: #ddd; } 
+input:-moz-placeholder{ color: #ddd; } 
+input::-moz-placeholder{ color: #ddd; } 
+input:-ms-input-placeholder{ color: #ddd; } 
+
+/*--登录样式--*/
+#login{
+    background-color: #eee;
+    overflow: hidden;
+}
+.loginTitl{
+    width:200px;
+    height:100%;
+    background-color: #11649B;
+    border-right: 1px solid #9EBCD2;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.loginTitl h1{
+    text-align: left;
+    width: 50px;
+    font-size: 50px;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    text-shadow: -2px -2px 4px #eee;
+    font-family: 'STXingkai';
+    animation: anTextLine 2s ease;
+    -webkit-animation: anTextLine 4s linear;
+}
+.loginTitl .topText{
+    left: 40px;
+    top: 50px;
+}
+@keyframes anTextLine{
+    0%{line-height: 200px;}
+    100%{line-height: 80px;}
+}
+@-webkit-keyframes anTextLine{
+    0%{line-height: 200px;}
+    100%{line-height: 80px;}
+}
+.loginTitl .bottomText{
+    right: 40px;
+    bottom: 50px;
+}
+.loginBox{
+    width: 500px;
+    height:290px;
+    position:fixed;
+    left:50%;
+    top:40%;
+    margin-left: -250px;
+    margin-top:-140px;
+    border-bottom: 0px solid #469AD1;
+    box-shadow: 0px 0px 15px #fff;
+    border: 1px solid #eee;
+    overflow: hidden;
+    background-color: rgba(187, 199, 248, 0.13);
+}
+.loginBox .hdttl{
+    height:40px;
+    line-height:40px;
+    text-indent:10px;
+    color:#fff;
+    font-size:24px;
+    text-shadow: 1px 1px 2px #00395C;
+    border-bottom: 1px solid #818D9B;
+    font-family: 'STXingkai';
+}
+.loginBox .hdttl small{
+    font-size:18px;
+}
+.formBoxIcon{
+    margin-top:20px;
+}
+.formBoxIcon .fmlist{
+    width: 400px;
+    margin:0 auto 15px;
+}
+.formBoxIcon .fmlist .lablet{
+    font-size:15px;
+    color: #17f0f0;
+}
+.formBoxIcon .fmlist .inputBox{}
+.formBoxIcon .fmlist .tyicon{
+    width:40px;
+    text-align:center;
+    border:1px solid #ddd;
+    border-right:none;
+    font-size: 24px;
+    position: relative;
+    color: #469AD1;}
+.formBoxIcon .fmlist .tyicon i{
+    display: block; 
+    position: absolute; 
+    left: 8px;
+    top: 6px; 
+}
+.formBoxIcon .fmlist input{
+    border: 1px solid #ddd;
+    border-left-style: dotted;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    background: none;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.formBoxIcon .fmSbm{
+    text-align: center; 
+    padding-top: 10px;
+}
+.formBoxIcon .fmSbm .sbm{
+    width: 100px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px #00395C;
+    background: none;
+    border: 1px solid #eee;
+    background-color: rgba(108, 170, 246, 0.48);
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+.formBoxIcon .fmSbm .sbm:hover{
+  box-shadow:0 0 8px #fff;
+}
+.formBoxIcon .fmSbm .sbm:active{
+  box-shadow:0 0 8px #fff inset;
+}
+
+.formBoxIcon .onList .tyicon,.formBoxIcon .onList .tyicon input,.formBoxIcon .fmlist input:focus{
+    border-color:#15B3DE;
+    box-shadow:0 0 4px #15B3DE;
+    outline: none;
+}
+
+
+.formBoxIcon .onList .tyicon{}
+.formBoxIcon .onList input{}
+
+.formBoxIcon .errList .tyicon{
+    border-color:red;
+    box-shadow:0 0 4px red;
+    color:red;
+}
+.formBoxIcon .errList input{
+
+}

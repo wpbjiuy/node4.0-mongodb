@@ -1,0 +1,47 @@
+/**
+* mongodb数据集 => 'enterprise'
+*/ 
+{
+    "news":[
+        {
+            "name":"String",
+            "describe":"String",
+            "content":[
+                 {
+                    "title":"String",  //标题
+                    "author":"String",  //作者
+                    "releaseTime":"Date",  //发布时间
+                    "brief":"String HTML",  //简要
+                    "details":"String HTML"  //详情
+                }
+            ]
+        }
+    ],
+    "products":[
+        {
+            "name":"String",
+            "describe":"String",
+            "content":[
+                 {
+                    "name":"String",  //名称
+                    "imgs":["string","string"],
+                    "describe":"String",  //描述
+                    "details":"String HTML"  //详情
+                }
+            ]
+        }
+    ],
+    "File":[
+        {
+            "name":"String",
+            "describe":"String",
+            "content":[
+                 {
+                    "name":"String",  //名称
+                    "describe":"String",  //描述
+                    "details":"String HTML"  //详情
+                }
+            ]
+        }
+    ]
+}
